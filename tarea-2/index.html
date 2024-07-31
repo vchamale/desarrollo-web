@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pensum Victor Chamale</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #373f63;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        height: 20vh;
+      }
+      .container {
+        display: flex;
+      }
+      .menu {
+        width: 200px;
+        background-color: #eceaea;
+        padding: 10px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      }
+      .menu a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        margin-bottom: 5px;
+        border-radius: 4px;
+      }
+      .menu a:hover {
+        background-color: #ddd;
+      }
+      .content {
+        flex-grow: 1;
+        padding: 10px;
+      }
+      iframe {
+        width: 100%;
+        height: calc(
+          100vh - 50px
+        ); /* Ajusta el alto dependiendo del tamaño del header */
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="padding-top: 2rem">Pensum Victor Chamale</h1>
+    </header>
+    <div class="container">
+      <nav class="menu">
+        <a href="ciclos/ciclo_1.html" target="content-frame">Semestre 1</a>
+        <a href="ciclos/ciclo_2.html" target="content-frame">Semestre 2</a>
+        <a href="ciclos/ciclo_3.html" target="content-frame">Semestre 3</a>
+        <a href="ciclos/ciclo_4.html" target="content-frame">Semestre 4</a>
+        <a href="ciclos/ciclo_5.html" target="content-frame">Semestre 5</a>
+        <a href="ciclos/ciclo_6.html" target="content-frame">Semestre 6</a>
+        <a href="ciclos/ciclo_7.html" target="content-frame">Semestre 7</a>
+        <a href="ciclos/ciclo_8.html" target="content-frame">Semestre 8</a>
+        <a href="ciclos/ciclo_9.html" target="content-frame">Semestre 9</a>
+        <a href="ciclos/ciclo_10.html" target="content-frame">Semestre 10</a>
+      </nav>
+      <div class="content">
+        <iframe name="content-frame" src="info.html" title="Contenido"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
